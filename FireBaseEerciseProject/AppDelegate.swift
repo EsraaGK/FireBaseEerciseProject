@@ -23,6 +23,8 @@ var window: UIWindow?
         window = UIWindow(frame: UIScreen.main.bounds)
         
         FirebaseApp.configure()
+      //  let db = Firestore.firestore()
+        
         ApplicationDelegate.shared.application(
             application,
             didFinishLaunchingWithOptions: launchOptions
