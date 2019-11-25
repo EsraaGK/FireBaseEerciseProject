@@ -5,18 +5,51 @@
 //  Created by EsraaGK on 11/25/19.
 //  Copyright © 2019 EsraaGK. All rights reserved.
 //
-
+// https://fir-eerciseproject.firebaseapp.com/__/auth/handler
 import UIKit
+import Firebase
+import FBSDKCoreKit
+import Firebase
+import FBSDKLoginKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        FirebaseApp.configure()
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions: launchOptions
+        )
+        
+        
+        window?.rootViewController = Router.initializeMainNavigationController()
+        window?.makeKeyAndVisible()
         return true
     }
+
+    func application(
+        _ app: UIApplication,
+        open url: URL,
+        options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+    ) -> Bool {
+        return ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            options: options
+        )
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AppEvents.activateApp()
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 
