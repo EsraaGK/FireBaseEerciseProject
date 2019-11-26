@@ -6,7 +6,7 @@ target 'FireBaseEerciseProject' do
   use_frameworks!
 pod 'Firebase/Analytics'
 pod 'Firebase/Firestore'
-
+pod 'Firebase/Storage'
 # Optionally, include the Swift extensions if you're using Swift.
 pod 'FirebaseFirestoreSwift'
 
@@ -17,6 +17,9 @@ pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'
 pod 'Firebase/Auth'
+
+pod 'SDWebImage'
+
   # Pods for FireBaseEerciseProject
 
 end

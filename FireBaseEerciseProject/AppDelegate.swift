@@ -9,9 +9,8 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
-import Firebase
 import FBSDKLoginKit
-
+import FirebaseFirestore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,7 +22,7 @@ var window: UIWindow?
         window = UIWindow(frame: UIScreen.main.bounds)
         
         FirebaseApp.configure()
-      //  let db = Firestore.firestore()
+        _ = Firestore.firestore()
         
         ApplicationDelegate.shared.application(
             application,

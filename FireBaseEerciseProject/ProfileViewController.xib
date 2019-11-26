@@ -10,7 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="FireBaseEerciseProject" customModuleProvider="target">
             <connections>
                 <outlet property="coverImg" destination="Aaf-WW-A6D" id="NOB-pW-eNj"/>
-                <outlet property="nameLable" destination="38F-vU-RaV" id="bkf-p0-Eoq"/>
+                <outlet property="emailLable" destination="Rbx-FV-RJX" id="V2H-fQ-zNa"/>
+                <outlet property="nameLable" destination="38F-vU-RaV" id="PtL-Gf-sc6"/>
                 <outlet property="profileImg" destination="hZf-XQ-g4P" id="T9l-VA-BBi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,20 +35,30 @@
                         <outletCollection property="gestureRecognizers" destination="aPQ-r5-5k9" appends="YES" id="r1a-hj-kXR"/>
                     </connections>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38F-vU-RaV" userLabel="name">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38F-vU-RaV" userLabel="name">
                     <rect key="frame" x="182" y="440.5" width="50" height="25.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbx-FV-RJX" userLabel="email">
+                    <rect key="frame" x="186" y="468.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Rbx-FV-RJX" firstAttribute="top" secondItem="38F-vU-RaV" secondAttribute="top" constant="28" id="2Gp-Pv-pxC"/>
                 <constraint firstItem="hZf-XQ-g4P" firstAttribute="centerX" secondItem="Aaf-WW-A6D" secondAttribute="centerX" id="Krp-ev-WpY"/>
                 <constraint firstItem="38F-vU-RaV" firstAttribute="centerX" secondItem="hZf-XQ-g4P" secondAttribute="centerX" id="L7a-Ao-rss"/>
+                <constraint firstItem="Rbx-FV-RJX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nbl-YB-krD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aaf-WW-A6D" secondAttribute="trailing" id="QcR-NY-Gx4"/>
                 <constraint firstItem="Aaf-WW-A6D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RBX-JH-zA6"/>
                 <constraint firstItem="Aaf-WW-A6D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Sho-jt-RW4"/>
+                <constraint firstItem="Rbx-FV-RJX" firstAttribute="centerX" secondItem="38F-vU-RaV" secondAttribute="centerX" id="Xn8-oi-GTG"/>
+                <constraint firstItem="38F-vU-RaV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Y13-lR-HMY"/>
                 <constraint firstItem="38F-vU-RaV" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="bae-7k-AIy"/>
                 <constraint firstItem="Aaf-WW-A6D" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.33" id="jdy-Yt-uqf"/>
                 <constraint firstItem="hZf-XQ-g4P" firstAttribute="centerY" secondItem="Aaf-WW-A6D" secondAttribute="centerY" constant="100" id="pgW-RM-B5N"/>
